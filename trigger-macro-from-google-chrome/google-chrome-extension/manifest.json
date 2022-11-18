@@ -1,0 +1,16 @@
+{
+  "name": "Keyboard Maestro Chrome Event Emitter",
+  "manifest_version": 3,
+  "version": "1.0",
+  "description": "Call Keyboard Maestro with Google Chrome events for automation.",
+  "author": "Mike Grace",
+  "permissions": [
+    "tabs"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "128": "logo-128.png"
+  }
+}
