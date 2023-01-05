@@ -51,7 +51,7 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
  * the call out.
  * ********************/
 function macro(macroUUID, value='') {
-  fetch(`http://localhost:4490/action.html?macro=${macroUUID}&value=${value}`)
+  fetch(`http://localhost:4490/action.html?macro=${macroUUID}&value=${value}`, {mode: 'no-cors'})
     .then(function(response) {
         return response;
     }).then(function(data) {
